@@ -1,0 +1,71 @@
+<nav class="absolute top-0 inset-x-0 z-40 px-6 py-6">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <p class="text-white font-display text-xl tracking-[0.2em]">Takalas</p>
+    <div class="hidden md:flex items-center gap-10 text-xs font-medium tracking-[0.2em] uppercase text-white/70">
+      <a href="#embarcacao" class="hover:text-champagne-300 transition-colors">Embarcação</a>
+      <a href="#galeria" class="hover:text-champagne-300 transition-colors">Galeria</a>
+      <a href="#roteiros" class="hover:text-champagne-300 transition-colors">Roteiros</a>
+    </div>
+    <a href="https://wa.me/5522998881748?text=Ol%C3%A1!%20Quero%20reservar%20um%20passeio%20na%20M.C%20ONBOARD"
+       target="_blank" rel="noopener"
+       class="hidden sm:inline-flex bg-green-500 hover:bg-green-600 text-white text-xs font-semibold tracking-[0.15em] uppercase px-6 py-3 rounded-full transition-colors">
+      Reservar
+    </a>
+  </div>
+</nav>
+ 
+<!-- ============================================================
+  COMPONENTE: HeroComponent  (hero.component.html)
+  ⚓ Hero clássico-elegante: serif gigante + linha champagne
+============================================================= -->
+<header class="h-screen w-full relative overflow-hidden">
+ 
+  <!-- Vídeo de fundo -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover"
+    src="video-dela-exterior.mp4"
+    autoplay
+    loop
+    muted
+    playsinline>
+  </video>
+ 
+  <!-- Overlay navy profundo e uniforme -->
+  <div class="absolute inset-0 bg-navy-950/60"></div>
+  <div class="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-navy-950 to-transparent"></div>
+ 
+  <!-- Conteúdo centralizado -->
+  <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+ 
+    <div class="flex items-center gap-4 text-champagne-400">
+      <span class="w-12 h-px bg-champagne-400/70"></span>
+      <span class="text-[11px] md:text-xs font-medium tracking-[0.4em] uppercase">Cabo Frio &mdash; Região dos Lagos</span>
+      <span class="w-12 h-px bg-champagne-400/70"></span>
+    </div>
+ 
+    <h1 class="mt-8 text-white font-display text-5xl md:text-7xl lg:text-8xl leading-[1.05] max-w-5xl">
+      A elegância de navegar<br class="hidden md:block" />
+      <span class="italic text-champagne-300">em mar cristalino.</span>
+    </h1>
+ 
+    <p class="mt-8 text-white/70 text-base md:text-lg max-w-xl font-light tracking-wide leading-relaxed">
+      A bordo da Takalas, cada passeio é uma experiência privativa desenhada nos mínimos detalhes — do embarque ao pôr do sol.
+    </p>
+ 
+    <a
+      href="https://wa.me/5522998881748?text=Ol%C3%A1!%20Quero%20reservar%20um%20passeio%20na%20Takalas"
+      target="_blank"
+      rel="noopener"
+      class="mt-12 inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 animate-pulse text-white font-semibold tracking-[0.1em] uppercase text-sm md:text-base px-10 py-5 rounded-full shadow-2xl transition-colors duration-300">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.83 14.12c-.25.7-1.45 1.34-2 1.42-.51.08-1.16.11-1.87-.12-.43-.14-.98-.32-1.69-.62-2.97-1.28-4.91-4.27-5.06-4.47-.15-.2-1.21-1.61-1.21-3.07s.77-2.18 1.04-2.48c.27-.3.6-.37.8-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.6.85 2.07.92 2.22.08.15.13.33.03.53-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.31.31-.13.61.18.3.79 1.3 1.7 2.11 1.17 1.04 2.15 1.36 2.45 1.51.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.74.82 2.04.97.3.15.5.22.57.35.08.12.08.72-.17 1.42z"/>
+      </svg>
+      Agendar Meu Passeio
+    </a>
+ 
+    <!-- Indicador de rolagem -->
+    <a href="#embarcacao" aria-label="Rolar para baixo" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 hover:text-champagne-300 transition-colors">
+      <svg class="w-6 h-6 animate-bounce fill-none stroke-current stroke-2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+    </a>
+  </div>
+</header>

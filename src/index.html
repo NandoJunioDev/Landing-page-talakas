@@ -1,11 +1,33 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
 <head>
-  <meta charset="utf-8">
-  <title>LadingPageTalakas</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.C ONBOARD — Yacht Experience | Cabo Frio</title>
+ 
+  <!-- Tipografia: serif elegante (títulos) + sans geométrica (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+ 
+  <!-- ⚠️ Apenas para pré-visualização. No Angular, remova este CDN e configure as fontes no tailwind.config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Jost"', 'system-ui', 'sans-serif'],
+            display: ['"Marcellus"', 'serif']
+          },
+          colors: {
+            navy: { 900: '#0e1f33', 950: '#081524' },
+            champagne: { 300: '#e8d5ae', 400: '#d9bd85', 500: '#c6a35c' }
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
   <app-root></app-root>
